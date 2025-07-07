@@ -56,7 +56,8 @@ for (const i of correntinhas) {
   document.body.innerText += i;
 }*/
 
-  //MAP 
+  //MAP= permite tranformar cada item de um array em um novo valor, retornando um novo array com os resultados que não altera o array original - criando uma lista e=com base em outra
+
 /*const novoVetor = correntinhas.map((item) => {
   return item * 5;
 });
@@ -68,7 +69,7 @@ document.body.innerText = novoVetor; */ //ele vai multiplicar cada ponto por 5
 document.body.innerText = Vetor; */ //ele vai multiplicar cada ponto por 5
 
 
-//FILTER - retornam itens que atendem aquela condição - que retorne zero
+//FILTER - ele filta itens com base me uma condição e retorna em que atendem aquela condição - que retorne zero
 
 /*const VetorTres = correntinhas.filter((item) => item % 2 == 0); //% é o modolo que ando dividir ele só vai mostrar o resto todos da condição - ele pegou numeros pares 
 document.body.innerText = VetorTres;*/
@@ -78,6 +79,20 @@ document.body.innerText = valor;*/
 
 /*const teste = correntinhas.filter ((item) => item > 2); 
 document.body.innerText = teste;*/
+
+/*-----*/
+const livros = [
+  { titulo: "Promessas Vazias", preco: 45 },
+  { titulo: "Sacrificada", preco: 30 },
+  { titulo: "Corte de Espinhos e Rosas", preco: 60 },
+  { titulo: "O Acordo Com o Rei Elfo", preco: 38 },
+  { titulo: "Cinderela Está Morta", preco: 55 }
+];
+
+const livrosBaratos = livros.filter(livro => livro.preco < 50);
+
+console.log(livrosBaratos);
+
 
 
 /*----------------------------------------*/
